@@ -39,21 +39,7 @@
   <!--Dev dependencies -->
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Threading.Analyzers" Version="16.8.55" PrivateAssets="All" />
-  </ItemGroup>
-
-  <!-- Non .NET 5.0 dependencies -->
-  <ItemGroup Condition=" '$(TargetFramework)' != 'net5.0' ">
-    <PackageReference Include="System.IO.Pipelines" Version="4.6.0" />
-  </ItemGroup>
-
-  <!-- .NET 5.0 dependencies -->
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net5.0' ">
     <PackageReference Include="System.IO.Pipelines" Version="5.0.1" />
-  </ItemGroup>
-
-  <!-- .NET Standard 2.0 dependencies -->
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
-    <PackageReference Include="System.Buffers" Version="4.5.1" />
   </ItemGroup>
 
 </Project>
