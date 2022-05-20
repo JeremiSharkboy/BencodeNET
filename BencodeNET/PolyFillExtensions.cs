@@ -1,10 +1,4 @@
-﻿using System;
-using System.Buffers;
-using System.IO;
-using System.Runtime.InteropServices;
-using System.Text;
-
-namespace BencodeNET
+﻿namespace BencodeNET
 {
 #if NETSTANDARD2_0
     internal static class PolyFillExtensions
